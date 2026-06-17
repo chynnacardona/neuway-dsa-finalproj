@@ -1,0 +1,14 @@
+# Exclude my personal editor settings
+.vscode/
+
+# Exclude the 5 specific files you want to skip (replace with your actual filenames)
+AD_DSA.mp4
+AD_Runthrough.mp4
+dsa-final.mp4
+RUNTHROUGH.mp4
+WALKTHROUGH.mp4
+
+# CRITICAL: Exclude your massive dependency and build folders!
+node_modules/
+target/
+dist/
