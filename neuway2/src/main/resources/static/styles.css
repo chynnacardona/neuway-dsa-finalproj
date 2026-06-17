@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Pixelify Sans');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.map-area{
+    font-family: 'Pixelify Sans';
+    width: 933px;
+    height: 554px;
+    background-color: #F5F5F5;
+    border: #000000 solid 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: grid;
+    grid-template-columns: 746px 187px;
+    grid-template-rows: 60px auto;
+    box-sizing: border-box;
+    grid-template-areas: "titlebar titlebar"
+                         "map sidebar";
+}
+
+#titlebar {
+    width: 933px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: titlebar;
+    padding-right: 10px;
+}
+
+.title{
+    padding-left: 10px;
+}
+
+.btn img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#start{
+    font-family: 'Pixelify Sans';
+    width: 159px;
+    height: 26px;
+}
+
+.search-location{
+    font-family: 'Pixelify Sans';
+    padding-left: 12px;
+}
+
+#destination{
+    font-family: 'Pixelify Sans';
+    width: 159px;
+    height: 26px;
+}
+
+.search-destination{
+    font-family: 'Pixelify Sans';
+    padding-top: 21px;
+    padding-left: 12px;
+}
+
+.findPath{
+    padding-top: 21px;
+    padding-left: 12px;
+}
+
+.distance{
+    padding-top: 21px;
+    padding-left: 12px;
+}
+
+#distance{
+    font-size: 40px;
+    font-family: 'Pixelify Sans';
+}
+
+.routes{
+    display: grid;
+    padding-top: 21px;
+    padding-left: 12px;
+}
+
+#otherRoutes{
+    width: 159px;
+    height: 194px;
+    background-color: #FFFFFF;
+    overflow-x: scroll;
+    border: #000000 1px solid;
+}
+.map{
+    width: 746px;
+    height: 474px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.map img{
+    width: 731px;
+    height: 474px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border: #000000 solid 2px;
+}
+
+
+#suggestions-start, #suggestions-destination {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #000000;
+    max-height: 120px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    position: absolute;
+    width: 159px; /* match input width */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+#suggestions-start il, #suggestions-destination il {
+padding: 5px 10px;
+cursor: pointer;
+}
+
+#suggestions-start  li:hover , #suggestions-destination li:hover {
+background-color: #eee;
+}
+.search-location, .search-destination {
+    position: relative; 
+}
+.sidebar {
+    overflow: visible;
+}
